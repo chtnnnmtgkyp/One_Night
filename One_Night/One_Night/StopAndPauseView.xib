@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StopAndPauseView" customModule="One_Night" customModuleProvider="target">
+            <connections>
+                <outlet property="btnPause" destination="dW5-Au-3Gk" id="IkN-Oa-kJa"/>
+                <outlet property="btnStop" destination="kqw-3I-4QB" id="W4W-Xt-5B8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQx-5P-56C">
+                    <rect key="frame" x="236" y="0.0" width="4" height="115"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW5-Au-3Gk">
+                    <rect key="frame" x="52" y="14" width="159" height="87"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="PAUSE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnChange:" destination="-1" eventType="touchUpInside" id="aba-hG-Q3P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqw-3I-4QB">
+                    <rect key="frame" x="265" y="14" width="159" height="87"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="STOP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kqw-3I-4QB" firstAttribute="leading" secondItem="IQx-5P-56C" secondAttribute="trailing" constant="25" id="3tm-SJ-jL3"/>
+                <constraint firstItem="IQx-5P-56C" firstAttribute="leading" secondItem="dW5-Au-3Gk" secondAttribute="trailing" constant="25" id="EhW-aA-fik"/>
+                <constraint firstItem="kqw-3I-4QB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OVQ-wz-3al"/>
+                <constraint firstItem="IQx-5P-56C" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Oxm-pw-IB5"/>
+                <constraint firstItem="IQx-5P-56C" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Rtv-dO-3Zd"/>
+                <constraint firstItem="dW5-Au-3Gk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="X3W-fp-UWE"/>
+                <constraint firstItem="dW5-Au-3Gk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="a4I-nO-xeg"/>
+                <constraint firstItem="IQx-5P-56C" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:100" id="dUR-db-D6B"/>
+                <constraint firstItem="kqw-3I-4QB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="rQY-53-rQ1"/>
+                <constraint firstItem="dW5-Au-3Gk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="3:4" id="vX9-PE-4ep"/>
+                <constraint firstItem="kqw-3I-4QB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="3:4" id="wL2-zC-ZwI"/>
+                <constraint firstItem="IQx-5P-56C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zd2-jp-Ic3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="156" y="-109.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeerView" customModule="One_Night" customModuleProvider="target">
+            <connections>
+                <outlet property="lblText" destination="Mip-RB-SMe" id="VsK-AZ-LxP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Teb-la-dKd">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seer.png" translatesAutoresizingMaskIntoConstraints="NO" id="82F-In-6yS">
+                    <rect key="frame" x="0.0" y="20" width="600" height="200"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-RB-SMe">
+                    <rect key="frame" x="38" y="280" width="525" height="300"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" red="1" green="0.99277949229999995" blue="0.0023150858700000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="82F-In-6yS" firstAttribute="centerX" secondItem="Teb-la-dKd" secondAttribute="centerX" id="1ER-1Q-Uyh"/>
+                <constraint firstItem="Mip-RB-SMe" firstAttribute="centerX" secondItem="Teb-la-dKd" secondAttribute="centerX" id="9U4-FJ-J8r"/>
+                <constraint firstItem="82F-In-6yS" firstAttribute="width" secondItem="Teb-la-dKd" secondAttribute="width" id="Eop-Me-9mq"/>
+                <constraint firstAttribute="bottom" secondItem="Mip-RB-SMe" secondAttribute="bottom" constant="20" id="PhX-j1-wZp"/>
+                <constraint firstItem="82F-In-6yS" firstAttribute="height" secondItem="Teb-la-dKd" secondAttribute="height" multiplier="1:3" id="aCA-gV-vot"/>
+                <constraint firstItem="Mip-RB-SMe" firstAttribute="width" secondItem="Teb-la-dKd" secondAttribute="width" multiplier="7:8" id="ktQ-VB-mLw"/>
+                <constraint firstItem="82F-In-6yS" firstAttribute="top" secondItem="Teb-la-dKd" secondAttribute="top" constant="20" id="lbe-vK-wRR"/>
+                <constraint firstItem="Mip-RB-SMe" firstAttribute="height" secondItem="Teb-la-dKd" secondAttribute="height" multiplier="1:2" id="wva-dF-sDV"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="seer.png" width="400" height="548"/>
+    </resources>
+</document>
